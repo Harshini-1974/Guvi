@@ -45,51 +45,10 @@ const Hero = () => {
                         </button>
                     </div>
 
-                    <div style={{ marginTop: '3rem', display: 'flex', gap: '2rem', color: 'var(--color-text-muted)' }}>
-                        {[
-                            { Icon: Code2, label: "Industry Ready" },
-                            { Icon: Cpu, label: "AI Integrated" },
-                            { Icon: Globe, label: "Global Access" }
-                        ].map(({ Icon, label }, i) => (
-                            <div key={i} className="flex items-center gap-2">
-                                <Icon size={20} />
-                                <span style={{ fontSize: '0.875rem', fontWeight: 500 }}>{label}</span>
-                            </div>
-                        ))}
-                    </div>
+                   
                 </motion.div>
 
-                {/* Visual Element */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="hidden md:block" // Utilizing a utility class if defined, or will need inline style for hiding
-                    style={{ position: 'relative' }}
-                >
-                    <style>{`@media(max-width: 768px) { .md\\:block { display: none; } }`}</style>
-
-                    <div className="glass-card animate-float" style={{ transform: 'rotate(-2deg)', position: 'relative', zIndex: 10 }}>
-                        {/* Terminal Header */}
-                        <div className="flex items-center gap-2 mb-4" style={{ paddingBottom: '1rem', borderBottom: '1px solid var(--color-border)' }}>
-                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#EF4444' }}></div>
-                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#F59E0B' }}></div>
-                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#10B981' }}></div>
-                            <div style={{ marginLeft: '1rem', fontSize: '0.75rem', fontFamily: 'monospace', color: 'var(--color-text-muted)' }}>kec_guvi_partnership.jsx</div>
-                        </div>
-
-                        {/* Code Content */}
-                        <div style={{ fontFamily: 'monospace', fontSize: '0.875rem', lineHeight: 1.6 }}>
-                            <div style={{ color: '#A855F7' }}>const <span style={{ color: '#3B82F6' }}>future</span> = <span style={{ color: '#F59E0B' }}>async</span> () ={">"} {"{"}</div>
-                            <div style={{ paddingLeft: '1rem', color: 'var(--color-text-muted)' }}><span style={{ color: '#A855F7' }}>await</span> transformation.start({"{"}</div>
-                            <div style={{ paddingLeft: '2rem', color: '#06B6D4' }}>collaborators: <span style={{ color: '#F97316' }}>['KEC', 'GUVI']</span>,</div>
-                            <div style={{ paddingLeft: '2rem', color: '#06B6D4' }}>goal: <span style={{ color: '#10B981' }}>'Innovation Excellence'</span>,</div>
-                            <div style={{ paddingLeft: '1rem', color: 'var(--color-text-muted)' }}>{"}"});</div>
-                            <div style={{ paddingLeft: '1rem', color: '#A855F7' }}>return <span style={{ color: '#10B981' }}>"Success"</span>;</div>
-                            <div style={{ color: '#A855F7' }}>{"}"}</div>
-                        </div>
-                    </div>
-                </motion.div>
+                
             </div>
         </section>
     );
